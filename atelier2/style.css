@@ -1,0 +1,174 @@
+body{
+    
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: "Raleway", sans-serif;
+    height: 100vh;
+    background-position: bottom;
+    margin: 0;
+    padding: 0;
+}
+.box1 {
+    width: 18%;
+    background: hsl(228, 56%, 26%);
+    padding: 25px 0 25px 25px;
+    border-radius: 5px 60px 5px 5px;
+}
+.icos {
+    margin-top: 15px;
+}
+.ic {
+    background-color: hsl(229, 57%, 11%);
+    height: 20px;
+    padding: 13px;
+    width: 20px;
+    margin-right: 7px;
+    border-radius: 10px;
+}
+section.box2 {
+    background-color: #1d2c67;
+    height: 120px;
+    width: 38%;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+   
+}
+.progress-bar{
+    width: 500px;
+    height: 20px;
+    border-radius: 20px;
+    background: #220059;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 12px;
+    
+    }
+        .progress{
+        
+    height: 14px;
+    margin: 3px;
+    width: calc(80% - 4px);
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #fe9f98, #fb4d92);
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+        }
+        .btn{
+     height: 11px;
+     width: 11px;
+    background: #ffffff;
+     margin-right: 1px;
+    border-radius: 11px;
+    box-shadow: #0000004d 0px 1px 3px;
+        }
+    .box2 p{
+        color: hsl(230deg 27% 82%);
+       margin: 18px 0 0 40px;
+    padding-top: 15px;
+    }
+    .progress-bar::before {
+        content: '0GB';
+        position: absolute;
+        margin-top: 42px;
+        color: #ffffffa8;
+    }
+    .progress-bar::after {
+        content: '1000GB';
+        position: relative;
+        margin-top: 44px;
+        color: #ffffffa8;
+        margin-left: 89px;
+    }
+    .allbox {
+        display: flex;
+        height: 90%;
+        width: 98%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    .info strong {
+        color: black;
+        font-size: 30px;
+        margin-right: -10px;
+        margin-top: 7px!important;
+    }
+    .info p {
+        margin: 11px;
+        text-align: center;
+        padding: 0;
+    }
+    .info {
+        margin-top: -80px;
+        position: absolute;
+        background-color: #fff;
+        right: 23%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border-radius: 10px;
+        padding: 7px 18px;
+    }
+    .info::after {
+        border-left: 25px solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 30px solid #fff;
+        position: absolute;
+        right: 0%;
+        content: '';
+        top: 46px;
+    }
+    @media screen and (max-width:500px){
+        body{
+
+        background-image: url(images/bg-mobile.png);
+        background-size: cover;
+        }
+        .allbox {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+        }
+
+        .box1 {
+            min-width: 75%;
+    padding: 25px 0 25px 45px;
+        }
+        .progress-bar {
+            max-width: 80%;
+            margin-left: 30px;
+        }
+        section.box2 {
+            min-width: 86%;
+            margin-left: 1px;
+            margin-top: 20px;
+        }
+        .info {
+            margin-top: 60px;
+            right: 31%;
+            width: 35%;
+        }
+        .info p {
+            margin-left: 10px;
+            margin-top: 6px;
+        }
+        .info::after{
+            display: none;
+        }
+        .info strong {
+            font-size: 40px;
+        }
+        .progress-bar::after{
+            margin-left: 0;
+        }
+    }
